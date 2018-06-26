@@ -1,4 +1,15 @@
 var VideoListEntryView = Backbone.View.extend({
+  model: Video,
+  collection: Videos,
+
+  // el: '.video-list-entry',
+
+  initialize: function() {
+    this.render();
+    this.on('select', function() {
+      
+    })
+  },
 
 
   render: function() {
